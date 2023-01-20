@@ -28,7 +28,7 @@ def append_corners():
     except:
         print("chessboard not found")
 
-while len(objpoints) < 5:
+while len(objpoints) < 50:
     ret, img = camera.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     corners = []
